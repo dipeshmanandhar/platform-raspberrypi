@@ -135,13 +135,13 @@ board = env.BoardConfig()
 env.Replace(
     __fetch_fs_size=fetch_fs_size,
 
-    AR="arm-none-eabi-ar",
+    AR="arm-none-eabi-gcc-ar",
     AS="arm-none-eabi-as",
     CC="arm-none-eabi-gcc",
     CXX="arm-none-eabi-g++",
     GDB="arm-none-eabi-gdb",
     OBJCOPY="arm-none-eabi-objcopy",
-    RANLIB="arm-none-eabi-ranlib",
+    RANLIB="arm-none-eabi-gcc-ranlib",
     SIZETOOL="arm-none-eabi-size",
 
     ARFLAGS=["rc"],
